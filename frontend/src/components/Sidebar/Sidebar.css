@@ -1,0 +1,35 @@
+.sidebar {
+  position: fixed;
+  top: 9vh !important;
+  left: 10px !important;
+  border-right: 1px solid lightgray;
+  max-width: 250px !important;
+  width: 100%;
+  object-fit: contain;
+  height: 91vh !important;
+  align-items: left !important;
+  overflow: hidden;
+}
+
+.sidebar__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  /* text-align: left !important; */
+}
+
+.sidebar__icon {
+  color: rgb(187, 131, 251) !important;
+  font-size: 40px !important;
+}
+
+.sidebar__itemName {
+  font-family: "Cinzel Decorative";
+  font-weight: 1000;
+  font-style: italic;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: 20px;
+}

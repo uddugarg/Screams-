@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  background-color: rgb(233, 233, 233);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid lightgray;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.header__logo > img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.header__logo > h2 {
+  font-family: "Cinzel Decorative";
+  margin-left: 10px;
+}
+
+.header__navigation {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.header__navigationIcon {
+  color: rgb(176, 134, 200) !important;
+}
+
+.header__logBtn {
+  color: rgb(176, 134, 200) !important;
+  margin-right: 20px !important;
+}

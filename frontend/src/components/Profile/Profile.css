@@ -1,0 +1,134 @@
+.profile__panel{
+    position: relative;
+    left: 30% !important;
+    top: 15vh !important;
+    width: 500px;
+    height: 200px auto;
+    margin-bottom: 0px !important;
+    background: rgb(231, 227, 233);
+    box-shadow: 10px 10px 10px 0px rgba(176, 134, 200, 0.4);
+    padding: 10px;
+    align-items: left !important;
+    text-align: left;
+    /* box-shadow: 10px 10px 10px 0px rgba(187, 131, 251, 0.7) */
+}
+
+h3{
+    font-family: 'Cinzel Decorative';
+}
+
+.profile__pic{
+    width: 100px !important;
+    height: 100px !important;
+    border: 1px solid rgb(176, 134, 200);
+    margin-bottom: 20px;
+}
+
+.profile__panelDetails > h3{
+    font-family: 'Cinzel Decorative';
+    letter-spacing: 1.5px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.profile__flw > h3{
+    font-family: 'Cinzel Decorative';
+    letter-spacing: 1.5px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.profile__username{
+    color: gray;
+    letter-spacing: 1.1px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    margin-top: -20px !important;
+}
+
+.profile__site{
+    margin-left: 10px;
+    font-weight: 200px;
+    font-family: monospace;
+    text-transform: lowercase;
+}
+
+.profile__bio{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 200px;
+    font-size: 14px;
+    font-family: 'Cinzel Decorative';
+    text-transform: lowercase;
+}
+
+.profile__edit{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.profile__posts {
+    position: relative;
+    margin-top: 15vh !important;
+    margin-left: 30% !important;
+    align-items: center;
+}
+
+.update__profile{
+    position: absolute;
+    width: 80% !important;
+    top: 15vh !important;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.update__pic{
+    width: 150px !important;
+    height: 150px !important;
+    margin: 20px;
+    z-index: 0;
+}
+
+.update__edit{
+    margin-bottom: 10px !important;
+}
+
+.update__name{
+    display: flex;
+    width: 80%;
+}
+
+.update__field{
+    margin: 10px !important;
+    width: 80%;
+}
+
+.userPosts{
+    margin-left: -31% !important;
+}
+
+.update__btn{
+    background-color: rgb(176, 134, 200) !important;
+}
+
+.profile__flw{
+    display: flex;
+    align-items: center;
+}
+
+.flwrs{
+    margin-left: auto !important;
+}
+
+.profile__followers{
+    display: flex;
+    align-items: center;
+}
+
+.profile__followers > h4{
+    margin-left: 20px;
+    font-family: 'Cinzel Decorative';
+}

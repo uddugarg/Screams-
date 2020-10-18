@@ -1,0 +1,127 @@
+.messenger {
+  margin-top: 11vh !important;
+  margin-left: 20% !important;
+  align-items: center;
+  position: absolute;
+}
+
+h2{
+  font-family: 'Cinzel Decorative';
+  text-align: left;
+}
+
+.messenger__people {
+  box-shadow: 10px 10px 10px 0px rgba(176, 134, 200, 0.4);
+  width: 300px !important;
+  height: 80px !important;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.messenger__avatars{
+  margin-left: 10px;
+}
+
+.messenger__people > h4{
+  margin-left: 20px;
+  font-family: 'Cinzel Decorative';
+}
+
+
+.messenger__box{
+  width: 52vw;
+  height: 80vh;
+  margin-top: 15vh !important;
+  margin-left: 45% !important;
+  align-items: center;
+  position: fixed;
+  box-shadow: 10px 10px 10px 0px rgba(176, 134, 200, 0.4);
+  text-align: center;
+}
+
+.inbox__box{
+  width: 72vw;
+  height: 80vh;
+  margin-top: 15vh !important;
+  margin-left: 24% !important;
+  align-items: center;
+  position: absolute;
+  box-shadow: 10px 10px 10px 0px rgba(176, 134, 200, 0.4);
+  text-align: center;
+}
+
+.messenger__box > h2{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inbox__header{
+  position: fixed;
+  width: 72vw;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px 10px 0px rgba(176, 134, 200, 0.4);
+}
+
+.inbox__header > p{
+  font-family: 'Cinzel Decorative';
+  margin-left: 20px !important;
+}
+
+.inbox__headerBtn{
+  margin-left: auto !important;
+}
+
+.inbox__field{
+  position: fixed;
+  width: 72vw;
+  bottom: 3rem;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.inbox__textField{
+  flex: 1;
+}
+
+.inbox__messages{
+  position: relative;
+  width: 72vw;
+  height: 55vh !important;
+  margin-top: 10vh !important;
+  margin-left: 75px !important;
+  align-items: center;
+  z-index: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: 0px !important;
+}
+
+.inbox__message{
+  width: 250px;
+  height: 50px auto;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: lightgray !important;
+}
+
+.right{
+  margin-left: auto !important;
+  background-color: rgb(202, 170, 221) !important;
+  margin-right: 70px !important;
+}
+
+.inbox__avatar{
+  margin-left: 5px;
+}
+
+.inbox__msg{
+  margin-left: 10px;
+}

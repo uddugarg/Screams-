@@ -1,0 +1,163 @@
+.home {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(233, 233, 233);
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .home {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    height: auto;
+  }
+}
+
+.home__hero {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://api.time.com/wp-content/uploads/2016/01/confusion-2-mental-health-self-betterment.jpg?quality=85&crop=0px%2C261px%2C2500px%2C1406px&resize=1012%2C569&striphttps://api.time.com/wp-content/uploads/2016/01/confusion-2-mental-health-self-betterment.jpg?quality=85&crop=0px%2C261px%2C2500px%2C1406px&resize=1012%2C569&strip);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .home__hero {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__hero {
+    width: 100vw;
+    height: 100vh;
+    background-size: 180% 100%;
+  }
+}
+
+.home__header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.home__header > img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.home__header > h2 {
+  font-family: "Cinzel Decorative";
+  margin-left: 20px;
+}
+
+.home__container {
+  text-align: left;
+  margin-top: 25%;
+  padding: 20px;
+}
+
+.home__container > h1 {
+  font-family: "Cinzel Decorative";
+  padding: 20px;
+}
+
+.home__register {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 0 !important;
+  height: 100%;
+  padding: 20px;
+  align-items: center;
+  /* margin-top: 20px; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .home__register {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    /* top: 25% !important; */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home__register {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    /* top: 25% !important; */
+  }
+}
+
+.home__login {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  /* margin-left: 70px; */
+}
+
+.text-input {
+  width: 60% !important;
+  margin-bottom: 20px !important;
+}
+
+.error{
+  border: 1px solid red !important;
+}
+
+.input-feedback{
+  margin-top: -22px !important;
+}
+
+.home__logBtn {
+  background-color: rgb(176, 134, 200) !important;
+  color: white !important;
+}
+
+.home__signUp {
+  padding: 20px;
+  text-align: left;
+}
+
+.home__signUp > h3 {
+  font-family: "Cinzel Decorative";
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+.home__signUpBtn {
+  margin-left: 20% !important;
+  width: 60%;
+}
+
+.home__modalNameField {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px !important;
+}
+
+.text-reg-input {
+  width: 100%;
+  margin-bottom: 15px !important;
+}
+
+.home__footer {
+  position: absolute;
+  margin-left: 37%;
+  color: rgb(179, 179, 179);
+  bottom: 0;
+  margin-bottom: 50px !important;
+}
