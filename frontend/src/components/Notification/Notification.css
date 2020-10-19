@@ -1,0 +1,15 @@
+.notify__item{
+    background-color: rgb(226, 197, 243) !important;
+    margin-bottom: 5px !important;
+    height: 50px !important;
+    max-width: 400px !important;
+}
+
+h3{
+    font-family: 'Cinzel Decorative';
+    text-align: center;
+}
+
+.notify__username{
+    font-family: 'Cinzel Decorative';
+}

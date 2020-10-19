@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import screamLogo64x from '../../images/screamLogo64x.png'
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive'
@@ -7,10 +7,11 @@ import ChatIcon from '@material-ui/icons/Chat'
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { IconButton } from '@material-ui/core'
+import { Avatar, IconButton } from '@material-ui/core'
 import { Link, withRouter } from 'react-router-dom';
 import './Header.css';
 import { useSelector } from 'react-redux';
+import Notification from '../Notification/Notification';
 
 
 
@@ -18,14 +19,23 @@ function Header(props) {
 
     const user = useSelector(state => state.user);
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [profileMenu, setProfileMenu] = useState(null);
+    const [notif, setNotif] = useState(null)
 
     const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
+        setProfileMenu(event.currentTarget);
     };
 
     const handleClose = () => {
-        setAnchorEl(null);
+        setProfileMenu(null);
+    };
+
+    const handleOpenNotif = (event) => {
+        setNotif(event.currentTarget);
+    };
+
+    const handleCloseNotif = () => {
+        setNotif(null);
     };
 
     const handleLogout = () => {
@@ -54,9 +64,12 @@ function Header(props) {
                         <HomeRoundedIcon className='header__navigationIcon' />
                     </IconButton>
                 </Link>
-                <IconButton>
+                <IconButton aria-controls="notifications" aria-haspopup="true" onClick={handleOpenNotif}>
                     <NotificationsActiveIcon className='header__navigationIcon' />
                 </IconButton>
+                <Menu id="notifications" anchorEl={notif} keepMounted open={Boolean(notif)} onClose={handleCloseNotif}>
+                    <Notification />
+                </Menu>
                 <Link to={`/messenger`}>
                     <IconButton>
                         <ChatIcon className='header__navigationIcon' />
@@ -65,14 +78,15 @@ function Header(props) {
             </div>
 
             <div>
-                <Button className='header__logBtn' aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>{user.userData && user.userData.username}</Button>
+                <Button className='header__logBtn' aria-controls="profileMenu" aria-haspopup="true" onClick={handleClick}>{user.userData && user.userData.username}</Button>
 
-                <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+                <Menu id="profileMenu" anchorEl={profileMenu} keepMounted open={Boolean(profileMenu)} onClose={handleClose}>
+                    <Avatar className='header__avatar' src={user.userData && user.userData.image} alt='user' />
                     <Link to={`/manage/profile/${user.userData && user.userData.username}`}>
-                        <MenuItem onClick={handleClose}>Manage Profile</MenuItem>
+                        <MenuItem className='header__items' onClick={handleClose}>Manage Profile</MenuItem>
                     </Link>
-                    <MenuItem onClick={handleClose}>Setting</MenuItem>
-                    <MenuItem onClick={handleLogout}>LogOut</MenuItem>
+                    <MenuItem className='header__items' onClick={handleClose}>Setting</MenuItem>
+                    <MenuItem className='header__items' onClick={handleLogout}>LogOut</MenuItem>
                 </Menu>
             </div>
         </div>

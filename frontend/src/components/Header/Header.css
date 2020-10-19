@@ -40,3 +40,15 @@
   color: rgb(176, 134, 200) !important;
   margin-right: 20px !important;
 }
+
+.header__items {
+  background-color: rgb(226, 197, 243) !important;
+  margin-bottom: 5px !important;
+  height: 30px !important;
+}
+
+.header__avatar{
+  margin-left: 35%;
+  background-color: rgb(226, 197, 243) !important;
+  margin-bottom: 10px;
+}

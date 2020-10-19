@@ -18,11 +18,13 @@ function Like(props) {
         variable = {
             writer: user.userData._id,
             postId: props.postId,
+            postWriter: props.postWriter,
         }
     } else {
         variable = {
             writer: user.userData._id,
             commentId: props.commentId,
+            postWriter: props.postWriter,
         }
     }
 

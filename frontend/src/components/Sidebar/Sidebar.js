@@ -27,10 +27,12 @@ function Sidebar() {
                     <h1 className='sidebar__itemName'>Trending</h1>
                 </div>
             </Link>
-            <div className='sidebar__item'>
-                <MailOutlineIcon className='sidebar__icon' fontSize='large' />
-                <h1 className='sidebar__itemName'>Messages</h1>
-            </div>
+            <Link to='/messenger'>
+                <div className='sidebar__item'>
+                    <MailOutlineIcon className='sidebar__icon' fontSize='large' />
+                    <h1 className='sidebar__itemName'>Messages</h1>
+                </div>
+            </Link>
             <div className='sidebar__item'>
                 <BookmarksOutlinedIcon className='sidebar__icon' fontSize='large' />
                 <h1 className='sidebar__itemName'>Saved</h1>

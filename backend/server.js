@@ -21,6 +21,7 @@ app.use('/api/comment', require('./routes/comment'));
 app.use('/api/like', require('./routes/like'));
 app.use('/api/follow', require('./routes/follow'));
 app.use('/api/message', require('./routes/message'));
+app.use('/api/notify', require('./routes/notification'));
 
 app.use('/uploads', express.static('uploads'));
 

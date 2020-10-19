@@ -13,7 +13,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import AddCommentIcon from '@material-ui/icons/AddComment';
 import PollIcon from '@material-ui/icons/Poll';
 import SendIcon from '@material-ui/icons/Send';
-import { makeStyles, Modal, Avatar, IconButton } from '@material-ui/core';
+import { makeStyles, Modal, Avatar, IconButton, Divider } from '@material-ui/core';
 import './Post.css';
 
 function getModalStyle() {
@@ -157,6 +157,8 @@ function Trending(props) {
             <Sidebar />
 
             <h4>Trending</h4>
+            <br />
+            <hr />
 
             <div className='trending__posts'>
                 {posts.map((post, index) => (

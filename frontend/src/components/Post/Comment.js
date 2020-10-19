@@ -24,7 +24,9 @@ function Comment(props) {
             writer: user.userData._id,
             postId: props.postId,
             comment: reply,
+            reply: reply,
             commentId: props.comment._id,
+            postWriter: props.postWriter,
         }
 
         axios.post('/api/comment/postComment', variable)

@@ -134,7 +134,7 @@ function PostDetails(props) {
                         <p className='postDetail__userCaption'>{post.caption}</p>
                         <div className='postDetail__reaction'>
                             <div className='post__reactionBtns'>
-                                <Like post={post} postId={post._id} />
+                                <Like post={post} postId={post._id} postWriter={post.writer._id} />
                             </div>
                             <div className='post__reactionBtns'>
                                 <Modal open={open} onClose={() => setOpen(false)}>
@@ -144,6 +144,7 @@ function PostDetails(props) {
                                             commentNum={commentNum}
                                             postId={postId}
                                             refreshFunction={updateComments}
+                                            postWriter={post.writer._id}
                                         />
                                     </div>
                                 </Modal>
@@ -172,6 +173,7 @@ function PostDetails(props) {
                                 postId={postId}
                                 refreshFunction={updateComments}
                                 setCommentNum={setCommentNum}
+                                postWriter={post.writer._id}
                             />
                         </div>
                     </div>

@@ -19,6 +19,7 @@ function Comments(props) {
             comment: comment,
             writer: user.userData._id,
             postId: props.postId,
+            postWriter: props.postWriter,
         }
 
         axios.post('/api/comment/postComment', variable)
@@ -59,7 +60,7 @@ function Comments(props) {
             {props.comments && props.comments.map((comment, index) => (
                 (!comment.commentId &&
                     <div key={index} className='comments__comment'>
-                        <Comment comment={comment} postId={props.postId} commentId={comment._id} refreshFunction={props.refreshFunction} />
+                        <Comment comment={comment} postId={props.postId} commentId={comment._id} refreshFunction={props.refreshFunction} postWriter={props.postWriter} />
                         <Replies replies={props.comments} postId={props.postId} commentId={comment._id} refreshFunction={props.refreshFunction} />
                     </div>
                 )
